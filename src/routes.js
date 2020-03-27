@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Logon from "./pages/Logon/Index";
 import Register from "./pages/Register/Index";
 import Profile from "./pages/Profile/Index";
+import NewIncident from "./pages/NewIncident/Index";
 
 export default function Routes() {
   return (
@@ -13,6 +14,8 @@ export default function Routes() {
         <Route path="/register" exact component={Register} />
 
         <Route path="/profile" exact component={Profile} />
+
+        <Route path="/incidents/new" exact component={NewIncident} />
       </Switch>
     </BrowserRouter>
   );
